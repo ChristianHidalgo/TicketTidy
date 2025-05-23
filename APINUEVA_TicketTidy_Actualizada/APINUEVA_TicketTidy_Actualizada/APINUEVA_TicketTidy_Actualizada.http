@@ -1,0 +1,6 @@
+@APINUEVA_TicketTidy_Actualizada_HostAddress = http://localhost:5289
+
+GET {{APINUEVA_TicketTidy_Actualizada_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

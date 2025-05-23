@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesBasico.VerIncidenciaBasico"
+             Title="Detalles de Incidencia"
+             BackgroundColor="#f0f0f5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <Label Text="Detalles de la Incidencia"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333" />
+
+            <Frame CornerRadius="15" Padding="20" BackgroundColor="White" HasShadow="True">
+                <VerticalStackLayout Spacing="15">
+
+                    <HorizontalStackLayout>
+                        <Label Text="ID:" FontAttributes="Bold" WidthRequest="150" TextColor="#555"/>
+                        <Label x:Name="lblId" TextColor="#222"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Fecha de Apertura:" FontAttributes="Bold" WidthRequest="150" TextColor="#555"/>
+                        <Label x:Name="lblFechaApertura" TextColor="#222"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Descripción:" FontAttributes="Bold" WidthRequest="150" TextColor="#555"/>
+                        <Label x:Name="lblDescripcion" TextColor="#222"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Tipo:" FontAttributes="Bold" WidthRequest="150" TextColor="#555"/>
+                        <Label x:Name="lblTipo" TextColor="#222"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Estado:" FontAttributes="Bold" WidthRequest="150" TextColor="#555"/>
+                        <Label x:Name="lblEstado" TextColor="#222"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Técnico Asignado:" FontAttributes="Bold" WidthRequest="150" TextColor="#555"/>
+                        <Label x:Name="lblTecnico" TextColor="#222"/>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Volver"
+                    Clicked="Volver_Clicked"
+                    BackgroundColor="#4A90E2"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

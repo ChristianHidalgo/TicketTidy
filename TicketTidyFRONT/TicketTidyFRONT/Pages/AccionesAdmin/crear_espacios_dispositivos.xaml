@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesAdmin.crear_espacios_dispositivos"
+             Title="crear espacios dispositivos">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <!-- Encabezado negro full width con contenido centrado -->
+            <Grid Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                    <Label Text="GESTIÓN DE ESPACIOS Y DISPOSITIVOS" 
+                           TextDecorations="Underline" TextColor="White"
+                           FontAttributes="Bold" FontSize="16"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Grid>
+
+            <!-- Caja ESPACIO -->
+            <Label Text="DATOS DEL ESPACIO"
+                   TextColor="Gray"
+                   TextDecorations="Underline"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Border Stroke="Black" StrokeThickness="1" BackgroundColor="DarkGray" Padding="15" Margin="5" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout>
+
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Información del espacio" FontAttributes="Bold" Margin="0,0,0,5" TextColor="Gray" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Descripción:" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="120"/>
+                                <Border BackgroundColor="White" HorizontalOptions="Fill" WidthRequest="250">
+                                    <Entry x:Name="espacioDescripcionEntry" HeightRequest="35" HorizontalTextAlignment="Start" HorizontalOptions="Fill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Botón Crear Espacio centrado debajo de su caja -->
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,30">
+                <Button Text="Crear Espacio" TextColor="Black" FontAttributes="Bold" x:Name="crearEspacioBtn" Clicked="CrearEspacio_Clicked"
+                        BackgroundColor="LightGreen" WidthRequest="140" HeightRequest="40"/>
+            </HorizontalStackLayout>
+
+            <!-- Caja DISPOSITIVO -->
+            <Label Text="DATOS DEL DISPOSITIVO"
+                   TextColor="Gray"
+                   TextDecorations="Underline"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Border Stroke="Black" StrokeThickness="1" BackgroundColor="DarkGray" Padding="15" Margin="5" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout>
+
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Información del dispositivo" FontAttributes="Bold" Margin="0,0,0,5" TextColor="Gray" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Descripción:" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="120"/>
+                                <Border BackgroundColor="White" HorizontalOptions="Fill" WidthRequest="250">
+                                    <Entry x:Name="dispositivoDescripcionEntry" HeightRequest="35" HorizontalTextAlignment="Start" HorizontalOptions="Fill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Marca:" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="120"/>
+                                <Border BackgroundColor="White" HorizontalOptions="Fill" WidthRequest="250">
+                                    <Entry x:Name="dispositivoMarcaEntry" HeightRequest="35" HorizontalTextAlignment="Start" HorizontalOptions="Fill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Modelo:" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="120"/>
+                                <Border BackgroundColor="White" HorizontalOptions="Fill" WidthRequest="250">
+                                    <Entry x:Name="dispositivoModeloEntry" HeightRequest="35" HorizontalTextAlignment="Start" HorizontalOptions="Fill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Tipo:" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="120"/>
+                                <Border BackgroundColor="White" HorizontalOptions="Fill" WidthRequest="250">
+                                    <Entry x:Name="dispositivoTipoEntry" HeightRequest="35" HorizontalTextAlignment="Start" HorizontalOptions="Fill"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>
+                    </Border>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Botón Crear Dispositivo centrado debajo de su caja -->
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,10,0,20">
+                <Button Text="Crear Dispositivo" TextColor="Black" FontAttributes="Bold" x:Name="crearDispositivoBtn" Clicked="CrearDispositivo_Clicked"
+                        BackgroundColor="LightGreen" WidthRequest="160" HeightRequest="40"/>
+            </HorizontalStackLayout>
+
+            <!-- Botón Volver centrado al final -->
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,20,0,20">
+                <Button Text="Volver" TextColor="White" x:Name="backBtn" Clicked="backBtn_Clicked"
+                        BackgroundColor="Black" WidthRequest="90" HeightRequest="40"/>
+            </HorizontalStackLayout>
+
+            <!-- Footer -->
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,100,0,0" Spacing="10">
+                    <Image Source="android_icon.png" HeightRequest="50" WidthRequest="50"/>
+                    <Label Text="TicketTidy.net" FontSize="16" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

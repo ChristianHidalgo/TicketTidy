@@ -1,0 +1,241 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TicketTidyFRONT
+build_property.ProjectDir = C:\Users\chris\Desktop\VisualStudio\TicketTidyFront\TicketTidyFRONT\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesAdmin/crear_espacios_dispositivos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesAdmin.crear_espacios_dispositivos.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesAdmin\crear_espacios_dispositivos.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesAdmin\crear_espacios_dispositivos.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesAdmin/crear_usuarios.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesAdmin.crear_usuarios.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesAdmin\crear_usuarios.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesAdmin\crear_usuarios.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesAdmin/ListarIncidencias.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesAdmin.ListarIncidencias.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesAdmin\ListarIncidencias.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesAdmin\ListarIncidencias.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesAdmin/ListarUsuarios.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesAdmin.ListarUsuarios.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesAdmin\ListarUsuarios.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesAdmin\ListarUsuarios.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesBasico/CrearIncidenciasUsuarioBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesBasico.CrearIncidenciasUsuarioBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesBasico\CrearIncidenciasUsuarioBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesBasico\CrearIncidenciasUsuarioBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesBasico/IncidenciasCerradasUsuarioBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesBasico.IncidenciasCerradasUsuarioBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesBasico\IncidenciasCerradasUsuarioBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesBasico\IncidenciasCerradasUsuarioBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesBasico/IncidenciasUsuarioBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesBasico.IncidenciasUsuarioBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesBasico\IncidenciasUsuarioBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesBasico\IncidenciasUsuarioBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesBasico/VerIncidenciaBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesBasico.VerIncidenciaBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesBasico\VerIncidenciaBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesBasico\VerIncidenciaBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesBasico/VerIncidenciaCerradaBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesBasico.VerIncidenciaCerradaBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesBasico\VerIncidenciaCerradaBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesBasico\VerIncidenciaCerradaBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesGestor/AccionAsignarIncidencia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesGestor.AccionAsignarIncidencia.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesGestor\AccionAsignarIncidencia.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesGestor\AccionAsignarIncidencia.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesGestor/AsignarIncidencias.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesGestor.AsignarIncidencias.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesGestor\AsignarIncidencias.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesGestor\AsignarIncidencias.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesGestor/CrearIncidencias.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesGestor.CrearIncidencias.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesGestor\CrearIncidencias.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesGestor\CrearIncidencias.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesGestor/IncidenciasByTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesGestor.IncidenciasByTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesGestor\IncidenciasByTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesGestor\IncidenciasByTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesGestor/IncidenciasByTipoGestor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesGestor.IncidenciasByTipoGestor.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesGestor\IncidenciasByTipoGestor.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesGestor\IncidenciasByTipoGestor.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesTecnico/CerrarIncidenciasTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesTecnico.CerrarIncidenciasTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesTecnico\CerrarIncidenciasTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesTecnico\CerrarIncidenciasTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesTecnico/IncidenciasAsignadasTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesTecnico.IncidenciasAsignadasTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesTecnico\IncidenciasAsignadasTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesTecnico\IncidenciasAsignadasTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesTecnico/IncidenciasPorFechaTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesTecnico.IncidenciasPorFechaTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesTecnico\IncidenciasPorFechaTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesTecnico\IncidenciasPorFechaTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/AccionesTecnico/IncidenciasPorTipoTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.AccionesTecnico.IncidenciasPorTipoTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccionesTecnico\IncidenciasPorTipoTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccionesTecnico\IncidenciasPorTipoTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/Auxiliares/LoadingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.Auxiliares.LoadingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Auxiliares\LoadingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Auxiliares\LoadingPage.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/GenericaAdmin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.GenericaAdmin.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GenericaAdmin.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GenericaAdmin.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/GenericaBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.GenericaBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GenericaBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GenericaBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/GenericaGestor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.GenericaGestor.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GenericaGestor.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GenericaGestor.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/GenericaTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.GenericaTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GenericaTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GenericaTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/MenuAdmin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.MenuAdmin.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MenuAdmin.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MenuAdmin.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/MenuBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.MenuBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MenuBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MenuBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/MenuGestor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.MenuGestor.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MenuGestor.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MenuGestor.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/MenuTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.MenuTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MenuTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MenuTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/PrincipalAdmin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.PrincipalAdmin.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PrincipalAdmin.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PrincipalAdmin.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/PrincipalBasico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.PrincipalBasico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PrincipalBasico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PrincipalBasico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/PrincipalGestor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.PrincipalGestor.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PrincipalGestor.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PrincipalGestor.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Pages/PrincipalTecnico.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Pages.PrincipalTecnico.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PrincipalTecnico.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PrincipalTecnico.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/chris/Desktop/VisualStudio/TicketTidyFront/TicketTidyFRONT/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TicketTidyFRONT.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

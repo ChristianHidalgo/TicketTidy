@@ -1,0 +1,16 @@
+# .NET build folders
+bin/
+obj/
+
+# Visual Studio
+.vscode/
+*.user
+*.suo
+
+# Android build
+*.apk
+*.ap_
+*.R.txt
+
+# Otros
+*.json

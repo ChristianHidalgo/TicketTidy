@@ -1,0 +1,1 @@
+C:\Users\pgrau\OneDrive\Documentos\TicketTidyFRONT\TicketTidyFRONT\TicketTidyFRONT.csproj;x64

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesBasico.CrearIncidenciasUsuarioBasico"
+             Title="Crear Incidencia">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <Label Text="Nueva Incidencia"
+                   TextColor="Gray"
+                   TextDecorations="Underline"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Border Stroke="Black" StrokeThickness="1" BackgroundColor="LightGray" Padding="15" Margin="5" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Spacing="15">
+
+                    <HorizontalStackLayout>
+                        <Label Text="Fecha de Apertura:" FontAttributes="Bold" WidthRequest="150" VerticalOptions="Center"/>
+                        <Label x:Name="lblFechaApertura" Text="{Binding FechaApertura}" VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Dispositivo:" FontAttributes="Bold" WidthRequest="150" VerticalOptions="Center"/>
+                        <Border BackgroundColor="White">
+                            <Picker x:Name="pickerDispositivos"
+                                    ItemsSource="{Binding Dispositivos}"
+                                    ItemDisplayBinding="{Binding Descripcion}"
+                                    SelectedItem="{Binding DispositivoSeleccionado}"
+                                    WidthRequest="200"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </Border>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Espacio:" FontAttributes="Bold" WidthRequest="150" VerticalOptions="Center"/>
+                        <Border BackgroundColor="White">
+                            <Picker x:Name="pickerEspacios"
+                                    ItemsSource="{Binding Espacios}"
+                                    ItemDisplayBinding="{Binding Descripcion}"
+                                    SelectedItem="{Binding EspacioSeleccionado}"
+                                    WidthRequest="200"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </Border>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Descripción:" FontAttributes="Bold" WidthRequest="150" VerticalOptions="Start"/>
+                        <Border BackgroundColor="White" HeightRequest="100">
+                            <Editor x:Name="descripcionEditor"
+                                    Placeholder="Describe la incidencia aquí..."
+                                    AutoSize="TextChanges"
+                                    TextColor="Black"
+                                    HeightRequest="100"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand" />
+                        </Border>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <HorizontalStackLayout Margin="0,20" HorizontalOptions="Center" Spacing="80">
+                <Button Text="Volver"
+                        TextColor="White"
+                        x:Name="backBtn"
+                        Clicked="backBtn_Clicked"
+                        BackgroundColor="Black"
+                        WidthRequest="120"/>
+
+                <Button Text="Guardar Incidencia"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        x:Name="saveBtn"
+                        Clicked="saveBtn_Clicked"
+                        BackgroundColor="LightGreen"
+                        WidthRequest="150"/>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="0,20">
+                <Label Text="TicketTidy.net" FontSize="12" TextColor="Gray"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

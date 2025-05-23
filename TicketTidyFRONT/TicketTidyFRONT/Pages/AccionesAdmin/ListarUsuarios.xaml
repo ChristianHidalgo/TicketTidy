@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesAdmin.ListarUsuarios"
+             Title="Listado de Usuarios">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <HorizontalStackLayout Background="Black" HeightRequest="60" Margin="0,0,0,30" VerticalOptions="Center">
+                <Label Text="LISTADO DE USUARIOS"
+           TextDecorations="Underline"
+           TextColor="White"
+           FontAttributes="Bold"
+           FontSize="18"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand"
+           Margin="100,0" />
+            </HorizontalStackLayout>
+
+
+
+            <!-- Línea divisora -->
+            <BoxView BackgroundColor="DarkGray" HeightRequest="2" Margin="0,20,0,0" />
+
+            <!-- Picker de tipo usuario -->
+            <Picker x:Name="TipoUsuarioPicker"
+                    Title="Selecciona un tipo de usuario"
+                    SelectedIndexChanged="TipoUsuarioPicker_SelectedIndexChanged"
+                    Margin="10" />
+
+            <!-- Lista de usuarios -->
+            <Border Background="LightGray" Margin="5">
+                <CollectionView x:Name="UsuariosCollectionView">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="2" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border BackgroundColor="Beige" Margin="5" Padding="10">
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <VerticalStackLayout Grid.Column="0" Spacing="4" VerticalOptions="Center">
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Nombre de Usuario: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding NombreUsuario}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Email: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding Email}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Teléfono: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding Telefono}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

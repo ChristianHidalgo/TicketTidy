@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesAdmin.ListarIncidencias"
+             Title="Listado de Incidencias">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <HorizontalStackLayout Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                <Grid ColumnDefinitions="*,2*,*">
+                    <Image Source="{Binding image}" Grid.Column="0" />
+                    <Label Text="LISTADO DE INCIDENCIAS" TextDecorations="Underline" TextColor="White"
+                           Grid.Column="1" VerticalOptions="CenterAndExpand" Margin="41,0" />
+                    <Border Grid.Column="2" WidthRequest="100">
+                        <VerticalStackLayout>
+                            <Label Text="Fecha" TextColor="White" HorizontalOptions="Center" Padding="5" />
+                            <Label Text="{Binding fecha}" TextColor="White" HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+            </HorizontalStackLayout>
+
+            <BoxView BackgroundColor="DarkGray" HeightRequest="2" Margin="0,20,0,0" />
+
+          
+            <ActivityIndicator IsRunning="{Binding loading}" />
+
+            <Border Background="LightGray" Margin="5">
+                <CollectionView ItemsSource="{Binding Incidencias}">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="2" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border BackgroundColor="Beige" Margin="5" Padding="10">
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <VerticalStackLayout Grid.Column="0" Spacing="4" VerticalOptions="Center">
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Id de la incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding Id}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Fecha de apertura: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding FechaDeApertura, StringFormat='{0:dd-MM-yyyy}'}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Estado: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding Estado}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Descripcion incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding DescripcionDeLaIncidencia}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Border>
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false">
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Label Text="TicketTidy.net" FontSize="16" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

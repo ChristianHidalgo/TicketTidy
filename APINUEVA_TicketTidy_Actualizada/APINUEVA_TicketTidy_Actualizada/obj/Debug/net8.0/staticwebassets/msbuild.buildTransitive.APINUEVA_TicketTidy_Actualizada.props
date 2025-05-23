@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\APINUEVA_TicketTidy_Actualizada.props" />
+</Project>

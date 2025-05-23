@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesAdmin.crear_usuarios"
+             Title="Crear usuarios">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                    <Label Text="GESTIÓN DE USUARIOS" 
+                TextDecorations="Underline" TextColor="White"
+                FontAttributes="Bold" FontSize="16"
+                VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Grid>
+
+            <Label Text="DATOS DEL USUARIO"
+                   TextColor="Gray"
+                   TextDecorations="Underline"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Border Stroke="Black" StrokeThickness="1" BackgroundColor="DarkGray" Padding="15" Margin="5" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout>
+
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Información básica" FontAttributes="Bold" Margin="0,0,0,5" TextColor="Gray" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Nombre:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White">
+                                    <Entry x:Name="nombreEntry" WidthRequest="160" HeightRequest="35" HorizontalTextAlignment="End"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Correo:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White">
+                                    <Entry x:Name="correoEntry" WidthRequest="160" HeightRequest="35" Keyboard="Email" HorizontalTextAlignment="End"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Contraseña:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White">
+                                    <Entry x:Name="contrasenaEntry" IsPassword="True" WidthRequest="160" HeightRequest="35" HorizontalTextAlignment="End"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Teléfono:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White">
+                                    <Entry x:Name="telefonoEntry" WidthRequest="160" HeightRequest="35" Keyboard="Telephone" HorizontalTextAlignment="End"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="Tipo de usuario:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White">
+                                    <Picker x:Name="pickerTipoUsuario" WidthRequest="160" Title="Seleccionar tipo">
+                                        <Picker.Items>
+                                            <x:String>Administrador</x:String>
+                                            <x:String>Gestor</x:String>
+                                            <x:String>Técnico</x:String>
+                                            <x:String>Básico</x:String>
+                                        </Picker.Items>
+                                    </Picker>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <HorizontalStackLayout Margin="0,20" HorizontalOptions="Center" Spacing="130">
+                <Button Text="Volver" TextColor="White" x:Name="backBtn" Clicked="backBtn_Clicked"
+                        BackgroundColor="Black" WidthRequest="100"/>
+                <Button Text="Crear" TextColor="Black" FontAttributes="Bold" x:Name="crearBtn" Clicked="crearBtn_Clicked"
+                        BackgroundColor="LightGreen" WidthRequest="100"/>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+                <HorizontalStackLayout HorizontalOptions="Center" Margin="0,100,0,0">
+                    <Image Source="android_icon.png" HeightRequest="50" WidthRequest="50"/>
+                    <Label Text="TicketTidy.net" FontSize="16" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

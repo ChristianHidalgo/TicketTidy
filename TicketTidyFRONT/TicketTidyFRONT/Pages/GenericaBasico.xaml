@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.GenericaBasico"
+             Title="Panel Basico"
+             BackgroundColor="{StaticResource PageBackgroundColor}">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25">
+
+            <Label x:Name="lblSaludo"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="{StaticResource Primary}"
+                   Margin="0,10,0,10" />
+
+            <Frame CornerRadius="10"
+                   Padding="15"
+                   HasShadow="True"
+                   BackgroundColor="{StaticResource White}">
+                <Image Source="ticket_management"
+                       HeightRequest="250"
+                       HorizontalOptions="Center"
+                       Aspect="AspectFit" />
+            </Frame>
+
+            <Label Text="¿Qué necesitas hoy? "
+                   FontSize="22"
+                   FontAttributes="Italic"
+                   TextColor="{StaticResource SecondaryTextColor}"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,20" />
+
+            <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                <Frame CornerRadius="8"
+                       Padding="10"
+                       BackgroundColor="{StaticResource PrimaryLight}"
+                       WidthRequest="40"
+                       HeightRequest="40"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Grid.Row="0"
+                       Grid.Column="0">
+                    <Image Source="incidencia_icono"
+                           WidthRequest="24"
+                           HeightRequest="24" />
+                </Frame>
+                <Label Text="Reportar un nuevo problema"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       FontSize="18"
+                       TextColor="{StaticResource PrimaryTextColor}"
+                       VerticalOptions="Center"
+                       Margin="15,0,0,0" />
+
+                <Frame CornerRadius="8"
+                       Padding="10"
+                       BackgroundColor="{StaticResource SecondaryLight}"
+                       WidthRequest="40"
+                       HeightRequest="40"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Margin="0,15,0,0"
+                       Grid.Row="1"
+                       Grid.Column="0">
+                    <Image Source="search"
+                           WidthRequest="24"
+                           HeightRequest="24" />
+                </Frame>
+                <Label Text="Consultar el estado de mis incidencias"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       FontSize="18"
+                       TextColor="{StaticResource PrimaryTextColor}"
+                       VerticalOptions="Center"
+                       Margin="15,15,0,0" />
+
+                <Frame CornerRadius="8"
+                       Padding="10"
+                       BackgroundColor="{StaticResource AccentLight}"
+                       WidthRequest="40"
+                       HeightRequest="40"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Margin="0,15,0,0"
+                       Grid.Row="2"
+                       Grid.Column="0">
+                    <Image Source="reopen_icon.png"
+                           WidthRequest="24"
+                           HeightRequest="24" />
+                </Frame>
+                <Label Text="Reabrir incidencias cerradas"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       FontSize="18"
+                       TextColor="{StaticResource PrimaryTextColor}"
+                       VerticalOptions="Center"
+                       Margin="15,15,0,0" />
+            </Grid>
+
+            <Label Text="Utiliza el menú lateral para acceder a más opciones y detalles."
+                   FontSize="16"
+                   TextColor="{StaticResource Gray400}"
+                   FontAttributes="Italic"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesBasico.IncidenciasUsuarioBasico">
+
+    <RefreshView x:Name="asignadasRefreshing" IsRefreshing="{Binding ViewModel.cargando}" Refreshing="asignadasRefreshing_Refreshing">
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <HorizontalStackLayout Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                    <Grid ColumnDefinitions="*,2*,*">
+                        <Image Source="{Binding image}" Grid.Column="0"/>
+                        <Label Text="MIS INCIDENCIAS" TextDecorations="Underline" TextColor="White"
+                               Grid.Column="1" VerticalOptions="CenterAndExpand" Margin="37,0"/>
+                        <Border Grid.Column="2" WidthRequest="100">
+                            <VerticalStackLayout>
+                                <Label Text="Fecha" TextColor="White" HorizontalOptions="Center" Padding="5"/>
+                                <Label Text="{Binding fecha}" TextColor="White" HorizontalOptions="Center"/>
+                            </VerticalStackLayout>
+                        </Border>
+                    </Grid>
+                </HorizontalStackLayout>
+
+                <Border Background="LightGray" Margin="3,0,3,30" Padding="5">
+                    <CollectionView ItemsSource="{Binding Incidencias}">
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="2"/>
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BackgroundColor="Beige" Margin="5">
+                                    <Grid ColumnDefinitions="Auto, *, Auto">
+                                        <Image Source="ticket" Grid.Column="0" WidthRequest="50" Margin="0,0,5,0"/>
+                                        <VerticalStackLayout Grid.Column="1">
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Id incidencia: " FontAttributes="Bold"/>
+                                                        <Span Text="{Binding Id}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Fecha apertura: " FontAttributes="Bold"/>
+                                                        <Span Text="{Binding FechaDeApertura, StringFormat='{0:dd-MM-yyyy}'}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Descripción incidencia: " FontAttributes="Bold"/>
+                                                        <Span Text="{Binding DescripcionDeLaIncidencia}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label>
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="Tipo incidencia: " FontAttributes="Bold"/>
+                                                        <Span Text="{Binding TipoDeIncidencia}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </VerticalStackLayout>
+
+                                        <VerticalStackLayout Grid.Column="2" VerticalOptions="Center">
+                                            <Button x:Name="verIncidencia" Clicked="verIncidencia_Clicked"
+                                                    HeightRequest="40" WidthRequest="40" BackgroundColor="Gray" Margin="10"
+                                                    CommandParameter="{Binding Id}">
+                                                <Button.ImageSource>
+                                                    <FileImageSource File="viajarincidencia_icono.png"/>
+                                                </Button.ImageSource>
+                                            </Button>
+                                            <Label Text="Ver" HorizontalOptions="Center" FontAttributes="Bold"
+                                                   TextDecorations="Underline"/>
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>
